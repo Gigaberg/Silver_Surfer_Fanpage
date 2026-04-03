@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact - Silver Surfer Fan Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="contact-page">
+  <header>
+    <h1>Contact Us</h1>
+    <p>This is our Contact Us Page</p>
+  </header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <section>
+    <article>
+      <h2>Want to Join the Silver Surfer Fan Club?</h2>
+      <p>Become part of our growing cosmic community! If you are passionate about Silver Surfer and love exploring his origin, powers, and philosophical journey, we would love to connect with you.</p>
+      <p>Leave your details below to join our fan club, or reach out to us directly via email.</p>
+      <p>📩 Email us at: <a href="mailto:silversurferfan001@gmail.com">silversurferfan001@gmail.com</a></p>
+
+      <h3>Join the Fan Club</h3>
+      <form action="/submit" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Your name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="your@email.com" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" placeholder="Your message..."></textarea>
+
+        <button type="submit">Join Now</button>
+      </form>
+
+      <div id="success-msg" style="display:none; margin-top:16px; color:#8f8; font-weight:bold;">
+        Thanks for joining! We'll be in touch.
+      </div>
+
+      <script>
+        if (new URLSearchParams(window.location.search).get('success')) {
+          document.getElementById('success-msg').style.display = 'block';
+        }
+      </script>
+    </article>
+  </section>
+  <footer>&copy; Surfer 001</footer>
+</body>
+</html>
