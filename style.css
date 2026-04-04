@@ -229,6 +229,111 @@ button:hover {
   background-color: #888;
 }
 
+/* ===== ABOUT PAGE ===== */
+.about-section {
+  background-color: #1e1e1e;
+  border-radius: 8px;
+  margin: 0 20px 20px;
+  padding: 30px;
+}
+
+.about-split {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.about-text {
+  flex: 2;
+  min-width: 260px;
+}
+
+.about-text h2 {
+  margin-bottom: 14px;
+  font-size: clamp(1.1rem, 3vw, 1.6rem);
+}
+
+.about-image-box {
+  flex: 1;
+  min-width: 200px;
+  text-align: center;
+}
+
+.about-image-box img {
+  width: 100%;
+  max-width: 280px;
+  border-radius: 10px;
+}
+
+.img-caption {
+  margin-top: 8px;
+  font-size: 0.85rem;
+  color: #888;
+}
+
+.surfer-quote {
+  border-left: 4px solid #8888bb;
+  padding: 16px 24px;
+  color: #bbb;
+  font-style: italic;
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+  line-height: 1.8;
+}
+
+.surfer-quote span {
+  display: block;
+  margin-top: 12px;
+  color: #8888bb;
+  font-style: normal;
+  font-size: 0.9rem;
+}
+
+.section-title {
+  color: #eee;
+  font-size: clamp(1.1rem, 3vw, 1.6rem);
+  margin-bottom: 20px;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.timeline-item {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.timeline-year {
+  background-color: #8888bb;
+  color: #111;
+  font-weight: bold;
+  padding: 6px 12px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.timeline-content h3 {
+  margin-bottom: 4px;
+  color: #ddd;
+}
+
+.timeline-content p {
+  color: #aaa;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .about-split {
+    flex-direction: column;
+  }
+}
+
 /* ===== POWERS GRID ===== */
 .powers-section {
   padding: 20px;

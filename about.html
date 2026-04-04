@@ -1,57 +1,98 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>About-My semantics</title>
+  <title>About - Silver Surfer Fan Page</title>
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body class="about-page">
-  <header class="header">
-    <h1>
-      About Silver Surfer Fan Club
-    </h1>
+  <header>
+    <h1>About Silver Surfer Fan Club</h1>
     <p>This is our About Us Page</p>
-    </header>
-    <nav>
-  <a href="index.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="contact.html">Contact</a>
-</nav>
-<section>
-  <article>
-  
-  <h2>About Silver Surfer Fan Club</h2>
-  
-  <p>
-    The Silver Surfer Fan Club is a tribute page dedicated to celebrating one of Marvel’s most powerful and philosophical cosmic heroes.
-    This website was created by fans who admire the journey of Norrin Radd — from a peaceful scientist of Zenn-La to the mighty Herald of Galactus.
-  </p>
-  
-  <p>
-    Our goal is to explore his origin, powers, struggles, and the deeper themes that make his story unique.
-  </p>
-  
-  <h3>What This Fan Page Offers</h3>
-  
-  <ul>
-    <li>Detailed background and origin stories</li>
-    <li>Explanations of the Power Cosmic</li>
-    <li>Interesting facts and comic highlights</li>
-    <li>A clean and structured layout for easy reading</li>
-    <li>A space for fans to appreciate cosmic storytelling</li>
-  </ul>
-  
-  <p>
-    This fan page was developed as part of a web development learning project combining creative storytelling with semantic HTML design.
-  </p>
-  
-</article>
-</section>
-<footer>
-  &copy; Surfer 001
-</footer>
+  </header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <section>
+    <article>
+      <h2>About Silver Surfer Fan Club</h2>
+      <p>The Silver Surfer Fan Club is a tribute page dedicated to celebrating one of Marvel's most powerful and philosophical cosmic heroes. This website was created by fans who admire the journey of Norrin Radd — from a peaceful scientist of Zenn-La to the mighty Herald of Galactus.</p>
+      <p>Our goal is to explore his origin, powers, struggles, and the deeper themes that make his story unique.</p>
+
+      <h3>What This Fan Page Offers</h3>
+      <ul>
+        <li>Detailed background and origin stories</li>
+        <li>Explanations of the Power Cosmic</li>
+        <li>Interesting facts and comic highlights</li>
+        <li>A clean and structured layout for easy reading</li>
+        <li>A space for fans to appreciate cosmic storytelling</li>
+      </ul>
+      <p>This fan page was developed as part of a web development learning project combining creative storytelling with semantic HTML design.</p>
+    </article>
+  </section>
+
+  <!-- Origin Story -->
+  <section class="about-section">
+    <div class="about-split">
+      <div class="about-text">
+        <h2>The Origin of Norrin Radd</h2>
+        <p>Born on the utopian planet Zenn-La, Norrin Radd lived in a world of peace and advanced civilization. When the world-devourer Galactus arrived to consume his planet, Norrin made the ultimate sacrifice — offering himself as a Herald in exchange for sparing Zenn-La.</p>
+        <p>Transformed by the Power Cosmic, his skin turned to living silver and he was bound to his surfboard, tasked with scouring the universe to find worlds for Galactus to consume. He lost his memories, his love Shalla-Bal, and his freedom — all to save his people.</p>
+      </div>
+      <div class="about-image-box">
+        <img src="silver.jpg" alt="Silver Surfer soaring through space">
+        <p class="img-caption">Norrin Radd — Herald of Galactus</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quote -->
+  <section class="about-section">
+    <blockquote class="surfer-quote">
+      "I have soared through the cosmos, witnessed the birth of stars and the death of worlds. Yet nothing compares to the spirit of those who refuse to surrender."
+      <span>— Silver Surfer</span>
+    </blockquote>
+  </section>
+
+  <!-- Timeline -->
+  <section class="about-section">
+    <h2 class="section-title">Key Moments in His Story</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <span class="timeline-year">1966</span>
+        <div class="timeline-content">
+          <h3>First Appearance</h3>
+          <p>Debuted in Fantastic Four #48, created by Stan Lee and Jack Kirby as an unplanned addition to the story.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <span class="timeline-year">1968</span>
+        <div class="timeline-content">
+          <h3>Solo Series</h3>
+          <p>Got his own comic series, exploring his philosophical struggles while trapped on Earth by Galactus.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <span class="timeline-year">1982</span>
+        <div class="timeline-content">
+          <h3>Freedom Regained</h3>
+          <p>Finally breaks free from Earth's barrier and returns to the cosmos to search for Shalla-Bal.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <span class="timeline-year">1991</span>
+        <div class="timeline-content">
+          <h3>Infinity Gauntlet</h3>
+          <p>Plays a pivotal role in the Infinity Gauntlet saga, briefly holding the gauntlet against Thanos.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>&copy; Surfer 001</footer>
 </body>
 </html>
